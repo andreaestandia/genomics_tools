@@ -44,13 +44,13 @@ This repo contains useful functions to process genomic data. Feel free to contac
 * Select a certain number of SNPs from IMMANC file (Bayesass input) 
 
   ```bash
-  python select_snps_ba.py --input_file BA_file --num_markers n_markers --output_file out
+  python select_snps_ba.py --input_file input.ba3 --num_markers n_markers --output_file output.ba3
   ```
 
 * Update population labels in IMMANC file
 
   ```bash
-  python update_labels_BA.py samples BA_file
+  python update_labels_BA.py list_samples.txt input.ba3 output.ba3
   ```
 
 * Filter samples from IMMANC file 
