@@ -32,7 +32,7 @@ This repo contains useful functions to process genomic data. Feel free to contac
 * Extract annotation from GFF file
 
   ```bash
-  python extract_annotation_gff.py --gff3_file gff_file --start_position start_pos --end_position end_pos --chromosome chr
+    python extract_annotation_gff.py --gff3_file gff_file --start_position start_pos --end_position end_pos --chromosome chr
   ```
 
 * Extract FASTA sequence from reference genome
