@@ -1,7 +1,21 @@
 import sys
 
-# Define a function to translate ANGSD alleles to VCF alleles
 def translate_alleles(allele1, allele2):
+    """
+    Translate ANGSD alleles to VCF alleles.
+    
+    Parameters:
+    -----------
+    allele1 : str
+        First allele as a string (e.g., '0', '1', '2', or '3').
+    allele2 : str
+        Second allele as a string (e.g., '0', '1', '2', or '3').
+        
+    Returns:
+    --------
+    tuple of str
+        A tuple containing two strings representing the reference allele and the alternate allele.
+    """
     if allele1 == '0':
         ref = 'A'
     elif allele1 == '1':
@@ -75,3 +89,4 @@ with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
                  '0/1' if probs[1] > probs[0] and probs[1] > probs[2] else \
                  '1/1'
             outfile.write(f"\t{gt}")
+
